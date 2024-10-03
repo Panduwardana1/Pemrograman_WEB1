@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Tiket Pesawat</title>
+</head>
+<body>
+    <h1>Form Pemesanan Tiket Pesawat</h1>
+    <form class="pemesanan">
+        <!-- Informasi Penumpang -->
+        <fieldset>
+            <legend>Informasi Penumpang</legend>
+                <label for="isinama">Nama Lengkap:</label>
+                <input type="text" name="name" id="isinama" placeholder="Masukan Nama Lengkap"><br>
+
+                <label for="nomor">Nomor Identitas (KTP/Paspor):</label>
+                <input type="text" id="nomor" placeholder="Masukan Nomor Identitas"><br>
+
+                <label for="kelamin">Jenis Kelamin</label>
+                <select name="kelamin" id="kelamin">
+                    <option value="laki">Laki-Laki</option>
+                    <option value="perempuan">Perempuan</option>
+                </select><br>
+
+                <label for="email">Alamat Email</label>
+                <input type="text" name="email" id="email" placeholder="Masukan Email"><br>
+
+                <label for="telepon">Nomor Telepon</label>
+                <input type="text" name="telepon" id="telepon" placeholder="Masukan No Telepon">
+                <!-- Informasi End -->
+            </fieldset>
+
+        <fieldset>
+            <!-- Informasi Penerbangan -->
+            <legend>Informasi Penerbangan</legend>
+            <label for="bandara">Bandara Keberangkatan</label>
+            <select name="bandara" id="bandara">
+                <option value="bandara1">Soekarno-Hatta(CGK)</option>
+                <option value="bandara2">I Gusti Ngurah Rai</option>
+                <option value="bandara3">Juanda-Surabaya</option>
+                <option value="bandara4">Sultan Hasanuddin-Makassar</option>
+                <option value="bandara5">Kualanamu-Medan</option>
+            </select><br>
+
+            <label for="bandara1">Bandara Tujuan</label>
+            <select name="bandara1" id="bandara1">
+                <option value="bandara1">Soekarno-Hatta(CGK)</option>
+                <option value="bandara2">I Gusti Ngurah Rai</option>
+                <option value="bandara3">Juanda-Surabaya</option>
+                <option value="bandara4">Sultan Hasanuddin-Makassar</option>
+                <option value="bandara5">Kualanamu-Medan</option>
+            </select><br>
+
+            <label for="tanggal">Tanggal Keberangkatan</label>
+            <input type="text" name="tanggal" id="tanggal" placeholder="dd/mm/yyyy"><br>
+
+            <label for="tgl-kepulangan">Tanggal Kepulangan</label>
+            <input type="text" name="tgl-kepulangan" id="tanggal-kepulangan" placeholder="dd/mm/yyyy"><br>
+
+            <label for="penumpang">Jumlah Penumpang</label>
+            <input type="text" name="penumpang" id="penumpang"><br>
+
+            <label for="jumlah-penumpang">Jumalah Penumpang</label>
+            <input type="number" id="jumlah-penumpang"><br>
+
+            <label for="kls-keberangkatan">Kelas Keberangkatan</label>
+            <select name="kls" id="kls-keberangkatan">
+                <option value="kls1">Economi</option>
+                <option value="kls2">Premium Economi</option>
+                <option value="kls3">Bisnis</option>
+                <option value="kls4">Frst Class</option>
+            </select>
+            <!-- End -->
+        </fieldset>
+
+        <fieldset>
+            <!-- informasi pembayaran -->
+            <legend>Metode Pembayaran</legend>
+            <p>Pilih Metode Pembayaran</p>
+            <input type="checkbox" id="kredit">
+            <label for="kredit">Kartu Kredit</label><br>
+            <input type="checkbox" id="transfer">
+            <label for="transfer">Transfer Bank</label><br>
+            <input type="checkbox" id="other">
+            <label for="other">E-Wallet (Gopay,OVO,dll.)</label><br>
+            <!-- End -->
+        </fieldset>
+        <button type="submit">Pesan Tiket</button>
+</body>
+</html>
