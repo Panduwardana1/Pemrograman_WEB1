@@ -1,0 +1,408 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    font-family: "Inter";
+    background-color: #fff;
+}
+
+.header {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    padding: 10px;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+
+.menu span {
+    color: #000;
+    font-size: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000;
+    margin: 15px;
+}
+
+.menu a:hover {
+    color: #9c9c9c79;
+    transition: 0.2s;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 4em 1em;
+    color: #000000;
+    gap: 50px;
+    padding-top: 10rem;
+    padding-bottom: 15rem;
+}
+
+.container h2 {
+    margin: 20px;
+    font-size: 35px;
+    color: #000;
+}
+
+.container span {
+    background-color: red;
+    color: #fff;
+    padding: 2px;
+}
+
+.container img {
+    height: 450px;
+    width: auto;
+    border-radius: 10px;
+    border: 5px solid #fff;
+}
+
+.row {
+    color: #000;
+    height: 200px;
+    width: auto;
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    gap: 2rem;
+}
+
+.forcontent .info {
+    flex: 1;
+    max-width: 300px;
+}
+
+.forcontent legend, .info legend {
+    font-size: 30px;
+    margin: 10px;
+}
+
+.info button {
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    border:none;
+}
+
+.info p, button, .info p{
+    margin: 10px;
+    text-align:start;
+}
+
+
+
+.containers {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
+    background-color: #f6f6f6;
+}
+
+.values {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: #fff;
+    background-color: black;
+    border-radius: 8px;
+    width: 300px;
+    gap: 15px;
+}
+
+.values:hover {
+    background-color: white;
+    color: #000;
+    transition: .1s;
+}
+
+.values i {
+    font-size: 50px;
+}
+
+.values-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.values h1 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.values p {
+    margin: 0;
+    font-size: 14px;
+}
+
+header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 20px;
+    color: #fff;
+    background-color: red;
+}
+
+.contentproduct {
+    display: flex;
+    gap:3%;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.product-design {
+    border: 2px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    padding: 5px;
+    color: #000;
+}
+
+.product-design img {
+    height: 40px;
+    width: auto;
+    border-radius: 3px;
+}
+
+.product-design img {
+    width: 100px;
+    height: auto;
+}
+
+.menu-product {
+    align-items: center;
+}
+
+.menu-product p {
+    padding: 5px;
+}
+
+.menu-product button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    
+}
+
+.menu-product button:hover {
+    background-color: #e1e1e1;
+    color: rgb(112, 112, 112);
+    transition: .2s;
+}
+
+
+/* Contact */
+
+.contact-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #070707;
+    color: #fff;
+}
+
+.contact-form {
+    width: 40%;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-form textarea, input {
+    width: 500px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    background-color: #00aa0c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contact-form button:hover {
+    background-color: #00aa0b97;
+    transition: .2s;
+}
+
+.contact-info {
+    width: 45%;
+}
+
+.contact-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+
+/* footer bottom*/
+.footer {
+    background-color: #f9f9f9;
+    padding: 20px;
+    font-size: 14px;
+    color: #191919;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.footer-section {
+    width: 30%;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    font-size: 16px;
+    color: #252525;
+    text-decoration: none;
+}
+
+.footer-section, a {
+    font-size: 20px;
+    color: #000;
+}
+
+.footer-section p{
+    font-size: 15px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-top: 1px solid #ddd;
+    font-size: 12px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+
+}
+
+.footer-links a {
+    color: #333;
+    margin-left: 20px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+
+/* media tablet */
+@media (max-width: 768px) {
+    .header, .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 2em 1em;
+    }
+
+    .container h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .contact-form textarea, .contact-form input {
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* media handphone */
+@media (max-width: 480px) {
+    .menu a {
+        margin: 10px 5px;
+    }
+
+    .container img {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .values {
+        width: 100%;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+
+    .contact-form textarea, .contact-form input {
+        width: 100%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
